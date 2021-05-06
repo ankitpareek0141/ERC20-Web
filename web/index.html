@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ERC20 Web app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../node_modules/web3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>ERC20 Tokens Market</h2>
+    <fieldset class="parent-container">
+        <legend>Netowork Details</legend>
+        <div class="container">
+            <h3>Current Account address: </h3>
+            <h4 id="account">--</h4>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Token Details</legend>
+        <div class="container">
+            <h3>Token Name: </h3>
+            <h4 id="tokenName">--</h4>
+
+            <h3>Token Symbol:</h3>
+            <h4 id="tokenSymbol">--</h4>
+
+            <h3>No. of Decimals:</h3>
+            <h4 id="decimals">--</h4>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Token Availability</legend>
+        <div class="container">
+            <h3>Total Supply of Tokens: </h3>
+            <h4 id="totalSupply"></h4>
+            <h3>Token's Available at Current Address: </h3>
+            <h4 id="availableSupply">
+                </h3>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Check Balance of an Address</legend>
+        <div class="container">
+            <h3>Enter Address</h3>
+            <input type="text" id="address" placeholder="Enter address here..." required>
+            <button id="checkBalance">Check</button>
+            <h4 id="resultBalance"></h4>
+        </div>
+    </fieldset>
+
+    
+    <fieldset class="parent-container">
+        <legend>Gas Estimation</legend>
+        <div class="container">
+            <h3>Gas Limit</h3>
+            <input type="number" id="gasLimitInput" placeholder="Enter gas limit" required>
+            <h3>Gas Price</h3>
+            <input type="number" id="gasPriceInput" placeholder="Enter gas price" required>
+            <button id="checkGasButton">Check</button>
+            <h4 id="gasResult"></h4>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Send Token</legend>
+        <div class="container">
+            <h3>Recipient Address: </h3>
+            <input type="text" id="recInput1" placeholder="Enter address here..." required>
+            <h3>Enter Amount</h3>
+            <input type="text" id="amtInput1" placeholder="Enter amount here..." required>
+            <button id="sendTo">Send</button>
+            <h4 id="sendRes"></h4>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Send Token from owner to Third-party</legend>
+        <div class="container">
+            <h3>Owner's Address: </h3>
+            <input type="text" id="ownerInput1" placeholder="Enter address here..." required>
+            <h3>Receiver's Address: </h3>
+            <input type="text" id="recInput2" placeholder="Enter address here..." required>
+            <h3>Amount</h3>
+            <input type="text" id="amtInput2" placeholder="Enter amount here..." required>
+            <button id="sendFrom">Send</button>
+            <h4 id="sendFromRes"></h4>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Approve</legend>
+        <div class="container">
+            <h3>Receiver's Address: </h3>
+            <input type="text" id="recInput3" placeholder="Enter address here..." required>
+            <h3>Amount</h3>
+            <input type="text" id="amtInput3" placeholder="Enter amount here..." required>
+            <button id="Approve">Approve</button>
+            <h4 id="approveResult"></h4>
+        </div>
+    </fieldset>
+
+    <fieldset class="parent-container">
+        <legend>Allowence</legend>
+        <div class="container">
+            <h3>Owner's Address: </h3>
+            <input type="text" id="ownerInput2" placeholder="Enter address here..." required>
+            <h3>Receiver's Address: </h3>
+            <input type="text" id="recInput4" placeholder="Enter address here..." required>
+            <button id="Allowence">Allowence</button>
+            <h4 id="allowences"></h4>
+        </div>
+    </fieldset>
+    <script src="web3-connect.js"></script>
+</body>
+
+</html>

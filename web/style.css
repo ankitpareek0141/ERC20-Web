@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.parent-container{
+    margin: auto;
+    width: 700px;
+    height: fit-content;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 7px;
+    color:dodgerblue; 
+    border:3px solid black;
+}
+legend{
+    color: black;
+}
+h2{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    background-color: darkcyan;
+    color: white;
+    border:3px solid black;
+    margin-bottom: 30px;
+}
+h4{
+    color:darkslategray
+}

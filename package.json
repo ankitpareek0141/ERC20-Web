@@ -1,0 +1,16 @@
+{
+  "name": "erc20-web",
+  "version": "1.0.0",
+  "description": "ERC20 web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankit Pareek",
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7",
+    "web3": "^1.3.5"
+  }
+}
